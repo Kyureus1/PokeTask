@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+:root {
+    --pokeball: repeating-linear-gradient(to bottom left, #ee1515, #f0f0f0);
+    --pastel-sunset: linear-gradient(to bottom right, #F6995C, #EF4B4B);
+    --lavander-nightmare: radial-gradient(#A3FFD6, #8576FF);
+}
+
+body {
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: var(--lavander-nightmare);
+}
+
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: var(--pokeball);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}
+
+.add-button {
+    background-color: transparent;
+    box-shadow:0 0 30px rgba(97,218,250,.5);
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:50px;
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    font-weight:700;
+    color:#fafafa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 54px;
+    width: 54px;
+    transform:rotate(0);
+    transition:.3s ease;
+    z-index: 1;
+}
+
+.add-button img {
+    width: 65px;
+    height: 65px;
+}
+
+.add-button:hover {
+    transform:rotate(180deg);
+}
+
+.TodoCount {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 48px;
+    font-weight: normal;
+}
+  
+.TodoCount span {
+    font-weight: bold;
+}
+
+.TodoList {
+    margin: 0;
+    padding: 0 0 56px;
+    list-style: none;
+}
+
+.TodoSearch {
+    background: #f9fbfc;
+    border-radius: 2px;
+    border: 2px solid #202329;
+    margin: 0 24px;
+    height: 64px;
+    width: calc(100% - 62px);
+    font-size: 24px;
+    text-align: center;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    color: #1e1e1f;
+    box-shadow: 0 5px 50px rgba(32,35,41,.25);
+    border-radius: 20px;
+}
+
+.TodoSearch::placeholder {
+    color: #a5a5a5;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+}
+
+.TodoSearch:focus {
+    outline-color: #61dafa;
+}
+
+.TodoItem {
+    background-color: #fafafa;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    box-shadow: 0 5px 50px rgba(32,35,41,.15);
+    border-radius: 50px;
+}
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Icon-container-check {
+    position: absolute;
+    left: 15px;
+}
+
+.Icon-container-check--active {
+    color: #4caf50;
+}
+
+.Icon-container-delete {
+    position: absolute;
+    right: 0;
+}
+
+.Icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.Icon-container-delete .Icon-svg {
+    width: 36px;
+    height: 36px;
+} 
+
+.Icon-container-delete:hover .Icon-svg {
+    fill: #E72929;
+} 
+
+.Icon-container-check:hover .Icon-svg {
+    fill: #4caf50;
+}
+
+.loadingImg {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.loadingImg img {
+    width: 380px;
+}
+
+#TodoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8576FF;
+    background-image: url(../assets/62-622450_pokemon-png-picture-fennekin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    border: 5px solid #9590b1;
+}
+
+#TodoForm label{
+    font-size: 40px;
+    background: var(--pokeball);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#TodoForm textarea {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    font-family: "Bakbak One", sans-serif;
+    resize: none;
+    font-size: medium;
+}   
+
+.TodoForm-buttonContainer button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: medium;
+    border: 2px solid #ee1515;
+    font-family: "Bakbak One", sans-serif;
+    margin: 10px;
+    background: #f0f0f0;
+    box-shadow: 2px 3px 0px #ee1515;
+    letter-spacing: 0.4px;
+}
+
+.TodoForm-buttonContainer button:hover {
+    background-color: #A3FFD6;
+    cursor: pointer;
+}
+
+.Modal {
+    display: flex;
+    background-color: rgba(32, 35, 41, .8);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
