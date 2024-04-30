@@ -31,24 +31,11 @@ Start the server
 
 ``` bash npm run start ```
 
-## Screenshots
-
-**loadstate**
-
-![App Screenshot](https://prnt.sc/eQgbbQMRO9in)
-
-**main**
-
-
-## Screenshots
-
-![App Screenshot](https://prnt.sc/aTWV8kFm-2iS)
-
 *styles will be better in the future*
 
 ## Feedback
 
-If you have any feedback, please reach out to us at eduardoacostacarvajal@gmail.com
+If you have any feedback, please reach out to me at eduardoacostacarvajal@gmail.com
 
 ## 🔗 Links
 
