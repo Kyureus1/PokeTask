@@ -1,13 +1,13 @@
 import React from 'react';
 import { AppUI } from './AppUI';
-import { TodoProvider } from './TodoContext';
+import { TaskProvider } from './TaskContext';
 
 function App() {
 
   return (
-    <TodoProvider>
+    <TaskProvider>
       <AppUI/>
-    </TodoProvider>
+    </TaskProvider>
   );
 }
 

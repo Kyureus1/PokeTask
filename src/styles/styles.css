@@ -58,7 +58,7 @@ h1 {
     transform:rotate(180deg);
 }
 
-.TodoCount {
+.taskCount {
     font-size: 24px;
     text-align: center;
     margin: 0;
@@ -66,17 +66,17 @@ h1 {
     font-weight: normal;
 }
   
-.TodoCount span {
+.taskCount span {
     font-weight: bold;
 }
 
-.TodoList {
+.taskList {
     margin: 0;
     padding: 0 0 56px;
     list-style: none;
 }
 
-.TodoSearch {
+.taskSearch {
     background: #f9fbfc;
     border-radius: 2px;
     border: 2px solid #202329;
@@ -92,17 +92,17 @@ h1 {
     border-radius: 20px;
 }
 
-.TodoSearch::placeholder {
+.taskSearch::placeholder {
     color: #a5a5a5;
     font-family: "Bakbak One", sans-serif;
     font-weight: 400;
 }
 
-.TodoSearch:focus {
+.taskSearch:focus {
     outline-color: #61dafa;
 }
 
-.TodoItem {
+.taskItem {
     background-color: #fafafa;
     position: relative;
     display: flex;
@@ -113,7 +113,7 @@ h1 {
     border-radius: 50px;
 }
 
-.TodoItem-p {
+.taskItem-p {
     margin: 24px 0 24px 24px;
     width: calc(100% - 120px);
     font-size: 18px;
@@ -121,7 +121,7 @@ h1 {
     font-weight: 400;
 }
 
-.TodoItem-p--complete {
+.taskItem-p--complete {
     text-decoration: line-through;
 }
 
@@ -183,7 +183,7 @@ h1 {
     width: 380px;
 }
 
-#TodoForm {
+#taskForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +197,7 @@ h1 {
     border: 5px solid #9590b1;
 }
 
-#TodoForm label{
+#taskForm label{
     font-size: 40px;
     background: var(--pokeball);
     background-clip: text;
@@ -207,7 +207,7 @@ h1 {
     -webkit-text-stroke-color: black;
 }
 
-#TodoForm textarea {
+#taskForm textarea {
     border-radius: 10px;
     margin: 10px;
     width: 300px;
@@ -218,7 +218,7 @@ h1 {
     font-size: medium;
 }   
 
-.TodoForm-buttonContainer button {
+.taskForm-buttonContainer button {
     padding: 10px;
     width: 100px;
     border-radius: 20px;
@@ -231,7 +231,7 @@ h1 {
     letter-spacing: 0.4px;
 }
 
-.TodoForm-buttonContainer button:hover {
+.taskForm-buttonContainer button:hover {
     background-color: #A3FFD6;
     cursor: pointer;
 }

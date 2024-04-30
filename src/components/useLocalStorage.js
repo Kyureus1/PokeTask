@@ -1,9 +1,9 @@
 import React from "react";
 import '../styles/styles.css';
 
-/* localStorage.removeItem('TODOS_V1');
+/* localStorage.removeItem('taskS_V1');
 
-const defaultTodos = [
+const defaulttasks = [
   { text: 'conseguir chamba de 20 horas al día', completed: false},
   { text: 'comerse un planeta', completed: false},
   { text: 'comprar 20 empresas', completed: false},
@@ -11,7 +11,7 @@ const defaultTodos = [
   {text: 'ganarle en una pelea a Dios', completed: false},
 ]
 
-localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos)); */
+localStorage.setItem('taskS_V1', JSON.stringify(defaulttasks)); */
 
 function useLocalStorage(itemName, initialValue) {
     const [item, setItem] = React.useState(initialValue);
@@ -42,7 +42,7 @@ function useLocalStorage(itemName, initialValue) {
     }, []);
 
     const saveItem = (newItem) => {
-        localStorage.setItem('TODOS_V1', JSON.stringify(newItem));
+        localStorage.setItem('taskS_V1', JSON.stringify(newItem));
         setItem(newItem);
     };
 

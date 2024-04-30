@@ -7,7 +7,7 @@ const iconTypes = {
     "delete": (color) => <BiX className="Icon-svg" fill={color}/>,
 };
 
-function TodoIcon ({ type, color, onClick }) {
+function TaskIcon ({ type, color, onClick }) {
     return (
         <span
         className={`Icon-container Icon-container-${type}`}
@@ -18,4 +18,4 @@ function TodoIcon ({ type, color, onClick }) {
     );
 }
 
-export { TodoIcon };
+export { TaskIcon };

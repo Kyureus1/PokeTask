@@ -1,9 +1,9 @@
 import React from "react";
-import { TodoIcon } from "./todoIcon";
+import { TaskIcon } from "./TaskIcon";
 
 function DeleteIcon( { onDelete } ) {
     return (
-        <TodoIcon
+        <TaskIcon
         type="delete"
         color="gray"
         onClick={onDelete}

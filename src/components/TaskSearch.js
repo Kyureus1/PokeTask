@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles/styles.css';
-import { TodoContext } from './TodoContext';
+import { TaskContext } from './TaskContext';
 
-function TodoSearch() {
+function TaskSearch() {
 
   const {
     searchValue,
     setSearchValue,
-  } = React.useContext(TodoContext);
+  } = React.useContext(TaskContext);
 
   return (
     <input 
-      className='TodoSearch' 
+      className='taskSearch' 
       placeholder="Correr 200 millas"
       value={searchValue}
       onChange={(event) => {
@@ -22,4 +22,4 @@ function TodoSearch() {
   );
 }
 
-export { TodoSearch };
+export { TaskSearch };

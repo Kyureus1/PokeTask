@@ -1,22 +1,22 @@
 import React from "react";
 import '../styles/styles.css';
-import { TodoContext } from './TodoContext';
+import { TaskContext } from './TaskContext';
 
-function TodoForm() {
+function TaskForm() {
     const {
-        addTodo,
+        addtask,
         setOpenModal,
-    } = React.useContext(TodoContext);
-    const [newTodoValue, setNewTodoValue] = React.useState('');
+    } = React.useContext(TaskContext);
+    const [newtaskValue, setNewtaskValue] = React.useState('');
 
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo(newTodoValue);
+        addtask(newtaskValue);
         setOpenModal(false);
     }
 
     const onChange = (event) => {
-        setNewTodoValue(event.target.value);
+        setNewtaskValue(event.target.value);
     }
 
     const onCancel = () => {
@@ -24,20 +24,20 @@ function TodoForm() {
     }
 
     return (
-        <form id="TodoForm" onSubmit={onSubmit}>
+        <form id="taskForm" onSubmit={onSubmit}>
             <label>Add a new Poketask!</label>
             <textarea
             placeholder="Catch a Rayquaza"
-            value={newTodoValue}
+            value={newtaskValue}
             onChange={onChange}
             />
-            <div className="TodoForm-buttonContainer">
+            <div className="taskForm-buttonContainer">
             <button 
-            className="TodoForm-button TodoForm-button--add" 
+            className="taskForm-button taskForm-button--add" 
             type="submit"
             >Add</button>
             <button 
-            className="TodoForm-button TodoForm-button--cancel"
+            className="taskForm-button taskForm-button--cancel"
             type="button"
             onClick={onCancel}
             >Cancel</button>
@@ -46,4 +46,4 @@ function TodoForm() {
     )
 }
 
-export { TodoForm };
+export { TaskForm };

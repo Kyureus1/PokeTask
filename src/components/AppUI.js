@@ -1,56 +1,56 @@
 import React from 'react';
-import { EmptyTodos } from './EmptyTodos';
-import { CreateTodoButton } from './TodoButton';
+import { EmptyTasks } from './EmptyTasks';
+import { CreateTaskButton } from './TaskButton';
 import { Modal } from './Modal';
-import { TodoContext } from './TodoContext';
-import { TodoCount } from './TodoCount';
-import { TodoItem } from './TodoItem';
-import { TodoList } from './TodoList';
-import { TodoSearch } from './TodoSearch';
-import { TodosError } from './TodosError';
-import { TodosLoading } from './TodosLoading';
+import { TaskContext } from './TaskContext';
+import { TaskCount } from './TaskCount';
+import { TaskItem } from './TaskItem';
+import { TaskList } from './TaskList';
+import { TaskSearch } from './TaskSearch';
+import { TasksError } from './TasksError';
+import { TasksLoading } from './TasksLoading';
 import { Title } from './title';
-import { TodoForm } from './TodoForm';
+import { TaskForm } from './TaskForm';
 
 function AppUI() {
   
   const {
     loading,
     error,
-    searchedTodos, 
-    completeTodo, 
-    deleteTodo,
+    searchedtasks, 
+    completetask, 
+    deletetask,
     openModal,
     setOpenModal,
-  } = React.useContext(TodoContext);
+  } = React.useContext(TaskContext);
 
   return (
       <>
         <Title/>
-        <TodoCount/>
-        <TodoSearch/>
+        <TaskCount/>
+        <TaskSearch/>
 
-        <TodoList>
-          {loading && <TodosLoading/>}
-          {error && <TodosError/>}
-          {(!loading && searchedTodos.length === 0) && <EmptyTodos/>}
-          {searchedTodos.map(todo => (
-            <TodoItem 
-            key = {todo.text} 
-            text = {todo.text}
-            completed = {todo.completed}
-            onComplete = {() => completeTodo(todo.text)}
-            onDelete = {() => deleteTodo(todo.text)}
+        <TaskList>
+          {loading && <TasksLoading/>}
+          {error && <TasksError/>}
+          {(!loading && searchedtasks.length === 0) && <EmptyTasks/>}
+          {searchedtasks.map(task => (
+            <TaskItem 
+            key = {task.text} 
+            text = {task.text}
+            completed = {task.completed}
+            onComplete = {() => completetask(task.text)}
+            onDelete = {() => deletetask(task.text)}
             />
           ))}
-        </TodoList>
+        </TaskList>
   
-        <CreateTodoButton
+        <CreateTaskButton
         setOpenModal={setOpenModal}
         />
         {openModal && (
           <Modal>
-            <TodoForm/>
+            <TaskForm/>
           </Modal>
         )}
       </>

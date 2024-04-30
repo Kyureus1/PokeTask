@@ -1,11 +1,11 @@
 import '../styles/styles.css';
 
-function TodoList({children}) {
+function TaskList({children}) {
     return (
-      <ul className='TodoList'>
+      <ul className='taskList'>
         {children}
       </ul>
     );
 }
 
-export { TodoList };
+export { TaskList };

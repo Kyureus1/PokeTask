@@ -1,6 +1,6 @@
 import '../styles/styles.css';
 
-function CreateTodoButton( { setOpenModal} ) {
+function CreateTaskButton( { setOpenModal} ) {
     return(
         <button 
         className='add-button' 
@@ -12,4 +12,4 @@ function CreateTodoButton( { setOpenModal} ) {
     );
 }
 
-export { CreateTodoButton };
+export { CreateTaskButton };

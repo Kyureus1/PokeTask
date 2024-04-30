@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/styles.css';
 
-function TodosError() {
+function EmptyTasks() {
   return (
-    <p>Fatal Error!</p>
+    <p>Create something!</p>
   );
 }
 
-export { TodosError };
+export { EmptyTasks };

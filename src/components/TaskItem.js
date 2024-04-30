@@ -2,14 +2,14 @@ import '../styles/styles.css';
 import { DeleteIcon } from './deleteIcon';
 import { CompleteIcon } from "./completeIcon";
 
-function TodoItem(props) {
+function TaskItem(props) {
     return (
-      <li className="TodoItem">
+      <li className="taskItem">
         <CompleteIcon
           completed={props.completed}
           onComplete={props.onComplete}
         />
-        <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
+        <p className={`taskItem-p ${props.completed && "taskItem-p--complete"}`}>{props.text}</p>
         <DeleteIcon
           onDelete={props.onDelete}
         />
@@ -17,4 +17,4 @@ function TodoItem(props) {
     );
 }
 
-export { TodoItem };
+export { TaskItem };
