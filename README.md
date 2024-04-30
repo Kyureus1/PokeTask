@@ -1,75 +1,57 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# PokeTask!
 
-¡Hola, Platzinauta!
+¡Hello!
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+my name is Edward, i'm giving my first steps to fullstack developer. I've been learning HTML, CSS and Javascript the past years and made some projects using raw code, right now, i'm learning frontend with
+ReactJS and as my first project i'm going to create a tasking app with pokemon catching system. 
+You can guess how it goes.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+## Ongoing...
 
-## Getting Started with Create React App
+It'll be as simple as catching Pokemon by tasking. i'm planning to create a catch treshold so people 
+won't be able to just auto-complete tasks randomly to get themselves random pokemon there's a lot of things
+to go trough yet but i already finished the tasklist part and some of the visuals.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Run Locally
 
-## Available Scripts
+Clone the project
 
-In the project directory, you can run:
+``` bash git clone https://link-to-project ```
 
-### `npm start`
+Go to the project directory
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+``` bash cd my-project ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies
 
-### `npm run build`
+``` bash npm install ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+``` bash npm run start ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+**loadstate**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![App Screenshot](https://prnt.sc/eQgbbQMRO9in)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**main**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+![App Screenshot](https://prnt.sc/aTWV8kFm-2iS)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*styles will be better in the future*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Feedback
 
-### Code Splitting
+If you have any feedback, please reach out to us at eduardoacostacarvajal@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔗 Links
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![portfolio](**well i don't have a portfolio yet, but i'll keep it on mind :D**)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eduardo-acosta-4ba506197/)
+[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)]([kyureus_](https://www.instagram.com/kyureus_/))
