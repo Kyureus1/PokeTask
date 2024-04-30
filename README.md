@@ -10,7 +10,7 @@ You can guess how it goes.
 ## Ongoing...
 
 It'll be as simple as catching Pokemon by tasking. i'm planning to create a catch treshold so people 
-won't be able to just auto-complete tasks randomly to get themselves random pokemon there's a lot of things
+won't be able to just auto-complete tasks randomly to get themselves random pokemon. There's a lot of things
 to go trough yet but i already finished the tasklist part and some of the visuals.
 
 ## Run Locally
