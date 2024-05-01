@@ -11,6 +11,7 @@ import { TasksError } from './TasksError';
 import { TasksLoading } from './TasksLoading';
 import { Title } from './title';
 import { TaskForm } from './TaskForm';
+import { TaskDiv } from './TaskDiv';
 
 function AppUI() {
   
@@ -28,22 +29,24 @@ function AppUI() {
       <>
         <Title/>
         <TaskCount/>
-        <TaskSearch/>
 
-        <TaskList>
-          {loading && <TasksLoading/>}
-          {error && <TasksError/>}
-          {(!loading && searchedtasks.length === 0) && <EmptyTasks/>}
-          {searchedtasks.map(task => (
-            <TaskItem 
-            key = {task.text} 
-            text = {task.text}
-            completed = {task.completed}
-            onComplete = {() => completetask(task.text)}
-            onDelete = {() => deletetask(task.text)}
-            />
-          ))}
-        </TaskList>
+        <TaskDiv>
+          <TaskSearch/>
+          <TaskList>
+            {loading && <TasksLoading/>}
+            {error && <TasksError/>}
+            {(!loading && searchedtasks.length === 0) && <EmptyTasks/>} 
+            {searchedtasks.map(task => (
+              <TaskItem 
+              key = {task.text} 
+              text = {task.text}
+              completed = {task.completed}
+              onComplete = {() => completetask(task.text)}
+              onDelete = {() => deletetask(task.text)}
+              />
+            ))}
+          </TaskList>
+        </TaskDiv>
   
         <CreateTaskButton
         setOpenModal={setOpenModal}

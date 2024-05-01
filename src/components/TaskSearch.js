@@ -12,7 +12,7 @@ function TaskSearch() {
   return (
     <input 
       className='taskSearch' 
-      placeholder="Correr 200 millas"
+      placeholder="Run 200 miles"
       value={searchValue}
       onChange={(event) => {
         setSearchValue(event.target.value);

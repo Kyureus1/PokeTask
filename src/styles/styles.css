@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 
 :root {
-    --pokeball: repeating-linear-gradient(to bottom left, #ee1515, #f0f0f0);
-    --pastel-sunset: linear-gradient(to bottom right, #F6995C, #EF4B4B);
-    --lavander-nightmare: radial-gradient(#A3FFD6, #8576FF);
+    --NightSky: #1E0342;
+    --Ocean: #0E46A3;
+    --Sky: #9AC8CD;
+    --Cloud: #E1F7F5;
+    --Cloudrgba: rgba(225, 247, 245, 0.5);
+    --PokeballRed: #ee1515;
+    --PokeballWhite: #f0f0f0;
+
 }
 
 body {
     font-family: "Bakbak One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: var(--lavander-nightmare);
+    background-image: url(../assets/d7lcnrq-6083330d-93c2-4c88-8646-745d134ce637.png);
+    background-color: var(--Cloudrgba);
+    background-blend-mode: color-dodge;
 }
-
-
 
 h1 {
     font-size: 40px;
     text-align: center;
     margin: 0;
     padding: 20px;
-    background: var(--pokeball);
+    background: linear-gradient(var(--NightSky), var(--Cloud));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 
 .add-button {
     background-color: transparent;
-    box-shadow:0 0 30px rgba(97,218,250,.5);
     border:none;
     border-radius:50%;
     cursor:pointer;
     font-size:50px;
     position:fixed;
-    bottom:24px;
+    top:24px;
     right:24px;
     font-weight:700;
     color:#fafafa;
@@ -59,37 +63,49 @@ h1 {
 }
 
 .taskCount {
-    font-size: 24px;
+    font-size: 25px;
     text-align: center;
     margin: 0;
     padding: 48px;
     font-weight: normal;
+    color: var(--PokeballWhite);
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-color: black;
 }
   
 .taskCount span {
     font-weight: bold;
 }
 
+.TaskDiv {
+    display: flex;
+    flex-direction: column;
+}
+
 .taskList {
     margin: 0;
-    padding: 0 0 56px;
+    padding: 0;
     list-style: none;
+    background-color: rgba(30, 3, 66, 0.5);
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 .taskSearch {
     background: #f9fbfc;
-    border-radius: 2px;
-    border: 2px solid #202329;
+    border: 2px solid var(--Ocean);
     margin: 0 24px;
-    height: 64px;
+    height: 50px;
     width: calc(100% - 62px);
     font-size: 24px;
     text-align: center;
     font-family: "Bakbak One", sans-serif;
     font-weight: 400;
-    color: #1e1e1f;
-    box-shadow: 0 5px 50px rgba(32,35,41,.25);
-    border-radius: 20px;
+    color: var(--PokeballWhite);
+    box-shadow: 0 5px 50px rgba(32,35,41, .25);
+    background-color: var(--NightSky);
+    opacity: .8;
 }
 
 .taskSearch::placeholder {
@@ -102,15 +118,31 @@ h1 {
     outline-color: #61dafa;
 }
 
+.EmptyTaskmsg {
+    font-size: 30px;
+    text-align: center;
+    color: var(--PokeballWhite);
+    margin: 0;
+    padding: 48px;
+    font-weight: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 .taskItem {
-    background-color: #fafafa;
+    background: linear-gradient(var(--NightSky), var(--Ocean));
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
+    border: 1px solid var(--Cloud);
     box-shadow: 0 5px 50px rgba(32,35,41,.15);
-    border-radius: 50px;
+    border-radius: 15px;
+    height: 60px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    margin: 7px 5px 7px 5px;
+    height: auto;
 }
 
 .taskItem-p {
@@ -119,6 +151,7 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    color: var(--PokeballWhite);
 }
 
 .taskItem-p--complete {
@@ -139,6 +172,7 @@ h1 {
 .Icon-container-check {
     position: absolute;
     left: 15px;
+    margin-top: 5px;
 }
 
 .Icon-container-check--active {
@@ -148,6 +182,7 @@ h1 {
 .Icon-container-delete {
     position: absolute;
     right: 0;
+    margin-top: 5px;
 }
 
 .Icon-svg {
@@ -188,18 +223,19 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #8576FF;
+    background-color: var(--Sky);
     background-image: url(../assets/62-622450_pokemon-png-picture-fennekin.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 20px;
-    border: 5px solid #9590b1;
+    border: 5px solid var(--Ocean);
+    text-align: center;
 }
 
 #taskForm label{
     font-size: 40px;
-    background: var(--pokeball);
+    background: linear-gradient(var(--NightSky), var(--Cloud));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 10px;
@@ -211,6 +247,8 @@ h1 {
     border-radius: 10px;
     margin: 10px;
     width: 300px;
+    background-color: var(--NightSky);
+    color: var(--PokeballWhite);
     text-align: center;
     align-content: center;
     font-family: "Bakbak One", sans-serif;
@@ -223,16 +261,16 @@ h1 {
     width: 100px;
     border-radius: 20px;
     font-size: medium;
-    border: 2px solid #ee1515;
+    border: 2px solid var(--Ocean);
     font-family: "Bakbak One", sans-serif;
     margin: 10px;
     background: #f0f0f0;
-    box-shadow: 2px 3px 0px #ee1515;
+    box-shadow: 2px 3px 0px var(--Ocean);
     letter-spacing: 0.4px;
 }
 
 .taskForm-buttonContainer button:hover {
-    background-color: #A3FFD6;
+    background-color: var(--Sky);
     cursor: pointer;
 }
 
@@ -247,4 +285,21 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+        padding-left: 0;
+        margin-right: 30px;
+    }
+
+    .add-button img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #taskform {
+        width: auto;
+    }
 }

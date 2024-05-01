@@ -6,7 +6,7 @@ function Modal({ children }) {
         <div className="Modal">
             {children}
         </div>,
-        document.getElementById("modal"),
+        document.getElementById("modal")
     );
 }
 

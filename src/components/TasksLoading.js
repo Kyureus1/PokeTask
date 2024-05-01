@@ -4,7 +4,12 @@ import '../styles/styles.css';
 function TasksLoading() {
   return (
     <div className="loadingImg">
-        <img src={require('../assets/load.gif')} alt='Loading...'></img>
+        <img 
+        src={require('../assets/load.gif')} 
+        alt='Loading...'
+        >
+          
+        </img>
     </div>
   );
 }
