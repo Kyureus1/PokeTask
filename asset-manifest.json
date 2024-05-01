@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/PokeTask/static/css/main.e0106075.css",
-    "main.js": "/PokeTask/static/js/main.3b990506.js",
+    "main.css": "/PokeTask/static/css/main.0e41ee09.css",
+    "main.js": "/PokeTask/static/js/main.18f617a8.js",
+    "static/media/d7lcnrq-6083330d-93c2-4c88-8646-745d134ce637.png": "/PokeTask/static/media/d7lcnrq-6083330d-93c2-4c88-8646-745d134ce637.07db4d52e79e7ff3f884.png",
     "static/media/62-622450_pokemon-png-picture-fennekin.png": "/PokeTask/static/media/62-622450_pokemon-png-picture-fennekin.bd9cb57679baf0e88d33.png",
     "static/media/load.gif": "/PokeTask/static/media/load.a17eb6f4379cbc903bcd.gif",
     "index.html": "/PokeTask/index.html",
-    "main.e0106075.css.map": "/PokeTask/static/css/main.e0106075.css.map",
-    "main.3b990506.js.map": "/PokeTask/static/js/main.3b990506.js.map"
+    "main.0e41ee09.css.map": "/PokeTask/static/css/main.0e41ee09.css.map",
+    "main.18f617a8.js.map": "/PokeTask/static/js/main.18f617a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0106075.css",
-    "static/js/main.3b990506.js"
+    "static/css/main.0e41ee09.css",
+    "static/js/main.18f617a8.js"
   ]
 }
